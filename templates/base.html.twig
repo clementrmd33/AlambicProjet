@@ -2,11 +2,35 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Alambic{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div id="bloc_page">
+            <header>
+                <img src="{{ asset('../images/Logo.png') }}" alt="logo du site web">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="fas fa-home"></i>Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cocktails</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Spiriteux</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Connexion</a>
+                        </li>
+                    </ul>
+            </header>
+            {% block body %}
+            {% endblock %}
+        </div>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

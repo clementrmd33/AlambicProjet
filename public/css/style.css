@@ -1,0 +1,27 @@
+body{
+    background-image: url("../images/fondecran.jpg");
+}
+#bloc_page{
+    width: 1360px;
+    margin: auto;
+}
+/*********************************************TEMPLATE*****************************************/
+
+                    /********************HEADER********************/
+header{
+    border-bottom:rgb(64, 34, 35) solid 2px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav a{
+    color: rgb(64, 34, 35);
+    font-weight: bold;
+}
+                    /********************FOOTER********************/
+
+/*********************************************ACCUEIL*****************************************/
+#bloc_accueil{
+    margin-top: 100px;
+}
