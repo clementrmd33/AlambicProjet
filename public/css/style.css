@@ -20,8 +20,20 @@ header{
     font-weight: bold;
 }
                     /********************FOOTER********************/
+footer{
+    width: 100%;
+    border-top:rgb(64, 34, 35) solid 2px ;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+footer a{
+    color: rgb(64, 34, 35);
+    font-weight: bold;
+}
 
 /*********************************************ACCUEIL*****************************************/
 #bloc_accueil{
     margin-top: 100px;
 }
+/*********************************************ADMINISTRATION*****************************************/

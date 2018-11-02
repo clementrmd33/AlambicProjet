@@ -15,10 +15,10 @@
                 <img src="{{ asset('../images/Logo.png') }}" alt="logo du site web">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="fas fa-home"></i>Accueil</a>
+                            <a class="nav-link active" href="{{ path('app_home_index') }}"><i class="fas fa-home"></i>Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cocktails</a>
+                            <a class="nav-link" href="{{ path('cocktails') }}">Cocktails</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Spiriteux</a>
@@ -30,6 +30,9 @@
             </header>
             {% block body %}
             {% endblock %}
+            <footer>
+                <a href="{{ path('admin') }}">Admin</a>
+            </footer>
         </div>
         {% block javascripts %}{% endblock %}
     </body>
